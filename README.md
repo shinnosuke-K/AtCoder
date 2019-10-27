@@ -8,10 +8,9 @@ AtCoderで書いたコードを載せています
 
 nameにはコンテスト名（例：ABCならABC、AGCならAGCなど、正直、自分がわかられば何でもいい）
 
-nameにはコンテストの番号をしてい
+nameにはコンテストの番号を指定
 
 ファイルはA〜Fまでのファイルを作成
-
 ```bash
 make start name= num=
 ```
