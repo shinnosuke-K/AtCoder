@@ -1,23 +1,28 @@
-name=""
-num=""
+name=
+num=
 
+ABCPATH=./ABC/${num}
+AGCPATH=./AGC/${num}
+
+.PHONY: abc
 abc:
-	mkdir ./ABC/${num}
-	touch ./ABC/${num}/A.py
-	touch ./ABC/${num}/B.py
-	touch ./ABC/${num}/C.py
-	touch ./ABC/${num}/D.py
-	touch ./ABC/${num}/E.py
-	touch ./ABC/${num}/F.py
+	mkdir ${ABCPATH}
+	touch ${ABCPATH}/A.py
+	touch ${ABCPATH}/B.py
+	touch ${ABCPATH}/C.py
+	touch ${ABCPATH}/D.py
+	touch ${ABCPATH}/E.py
+	touch ${ABCPATH}/F.py
 
+.PHONY: agc
 agc:
-	mkdir ./AGC/${num}
-	touch ./AGC/${num}/A.py
-	touch ./AGC/${num}/B.py
-	touch ./AGC/${num}/C.py
-	touch ./AGC/${num}/D.py
-	touch ./AGC/${num}/E.py
-	touch ./AGC/${num}/F.py
+	mkdir ${AGCPATH}
+	touch ${AGCPATH}/A.py
+	touch ${AGCPATH}/B.py
+	touch ${AGCPATH}/C.py
+	touch ${AGCPATH}/D.py
+	touch ${AGCPATH}/E.py
+	touch ${AGCPATH}/F.py
 
 other:
 	mkdir ./${name}/${num}
