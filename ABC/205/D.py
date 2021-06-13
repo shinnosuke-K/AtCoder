@@ -12,7 +12,6 @@ for _ in range(q):
     if k in a:
         n = a.index(k)
     
-
     while True:
         if not k in a:
             print(k+n)
